@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Desafio_cliente_vs.Models.VistaReuniones>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    Hola mundo
+    <br />
+    <h2>Juegos disponibles</h2>
+    <ul>
+        @foreach (var reu in Model)
+        {
+            <li>@reu.titulo</li>
+            <li>@reu.descripcion</li>
+            <li>@reu.fecha</li>
+        }
+    </ul>
+</div>
