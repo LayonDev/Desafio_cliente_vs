@@ -32,7 +32,7 @@ namespace Desafio_cliente_vs.Controllers
                     ModelState.AddModelError(string.Empty, "Error al consultar API");
                 }
             }
-            return View();
+            return View(reu);
         }
 
         public ActionResult About()
